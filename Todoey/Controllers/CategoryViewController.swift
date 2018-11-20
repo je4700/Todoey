@@ -39,7 +39,6 @@ class CategoryViewController: UITableViewController {
             print("Error saving context \(error)")
         }
         self.tableView.reloadData()
-        
     }
     
     func loadCategories(with request: NSFetchRequest<Category> = Category.fetchRequest()) {
